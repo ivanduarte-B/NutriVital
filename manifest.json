@@ -11,7 +11,7 @@
         {
             "src": "./piñaa.png",
             "type": "image/png",
-            "sizes": "900x600"
+            "sizes": "512x512"
         }
     ]
 }
