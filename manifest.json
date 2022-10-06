@@ -1,0 +1,17 @@
+{
+    "name": "Nutrivital",
+    "short_name": "Nutrivital",
+    "theme_color": "#03152e",
+    "background_color": "#03152e",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "./",
+    "start_url": "./",
+    "icons": [
+        {
+            "src": "./img/piñaa.png",
+            "type": "image/png",
+            "sizes": "900x600"
+        }
+    ]
+}
