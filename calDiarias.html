@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>NutriVital</title>
+  <link rel="manifest" href="./manifest.json">
+  <script type="text/javascript">
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+  
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- fevicon -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/wpsol_4e9a8b61b3ddf5ae6522e450c53d3c53.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">  
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+
+</head>
+<!-- body -->
+
+<body class="main-layout">
+  <!-- loader 
+  <div class="loader_bg">
+    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+  </div> -->
+  <!-- end loader -->
+  <!-- header -->
+  <header>
+    <!-- header inner -->
+    <div class="header-top">
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"><img src="images/logggo.PNG" alt="#" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
+         
+               <div class="menu-area">
+                <div class="limit-box">
+                  <nav class="main-menu">
+                    <ul class="menu-area-main">
+                      <li class="active"> <a href="index.html">Inicio</a> </li>
+                      <li> <a href="tablacalorias.html">Calorias</a> </li>
+                      <li> <a href="Recetas.html">Recetas</a> </li>
+                      <li> <a href="#cerealesyderivados">¿Saber mi IMC?</a> </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Frutas</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Verduras</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Cerveza</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Leguminosas</a></li>
+
+                        </ul>
+                      </li>
+                     
+                     <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
+                     </ul>
+                   </nav>
+                 </div>
+               </div> 
+              </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- end header inner -->
+
+     <!-- end header -->
+     <script language="JavaScript">
+
+      //AJAX
+      function newAjaxUser() { 
+        var xmlhttp=false; 
+        try 
+        { 
+          xmlhttp=new ActiveXObject("Msxml2.XMLHTTP"); //navegadores no IE
+        }
+        catch(e)
+        { 
+          try
+          { 
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); //para IE
+          } 
+          catch(E) { xmlhttp=false; }
+        }
+        if (!xmlhttp && typeof XMLHttpRequest!="undefined") { xmlhttp=new XMLHttpRequest(); } 
+      
+        return xmlhttp; 
+      }
+      //elminimar espacios
+      function dltSpaces(value) {
+        var x=0, y=value.length-1;
+        while(value.charAt(x)==" ") x++;	
+        while(value.charAt(y)==" ") y--;	
+        return value.substr(x, y-x+1);
+      }
+      
+      //valida nombre
+      function calcIt() {
+        var divMensaje1=document.getElementById("mantener");
+        var divMensaje2=document.getElementById("quemar");
+        var divMensaje3=document.getElementById("subir");
+        var divMensaje4=document.getElementById("tmb");
+      
+        var input1=document.getElementById("peso");
+        var peso=input1.value;
+        
+        var input2=document.getElementById("tipopeso2");
+        var libras=input2.value;
+        
+        var input3=document.getElementById("estatura");
+        var estatura=input3.value;
+        
+        var input4=document.getElementById("edad");
+        var edad=input4.value;
+        
+        var input5=document.getElementById("actividad");
+        var actividad=input5.value;
+        
+        var input6=document.getElementById("sexo1");
+        var sexo=input6.value;
+        
+        var textoAccion="calculando...";
+        
+        //formateando entrada
+        peso=dltSpaces(peso);
+        var pesoEscaped=escape(peso);
+        var pesoFormated = pesoEscaped.replace('%2C','.'); //si encuentra , lo pasa a .
+        
+        //formateando entrada
+        estatura=dltSpaces(estatura);
+        var estaturaEscaped=escape(estatura);
+        var estaturaFormated = estaturaEscaped.replace('%2C','.'); //si encuentra , lo pasa a .
+        
+        //formateando entrada
+        edad=dltSpaces(edad);
+        var edadEscaped=escape(edad);
+        var edadFormated = edadEscaped.replace('%2C','.'); //si encuentra , lo pasa a .
+        
+        if (input2.checked) libras = '1'; else libras = '0';
+        
+        if (input6.checked) sexo = '1'; else sexo = '0';
+        
+        divMensaje1.innerHTML=textoAccion; //cambio del mensaje de error
+        divMensaje2.innerHTML=textoAccion; //cambio del mensaje de error
+        divMensaje3.innerHTML=textoAccion; //cambio del mensaje de error
+        divMensaje4.innerHTML=textoAccion; //cambio del mensaje de error
+        
+        //ajax
+        /*
+        var ajax=newAjaxUser();
+        ajax.open("POST", "http://www.adelgazarapido.org//wp-content/themes/adelgazatheme/calc2.php", true);
+        ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        ajax.send("peso="+pesoFormated+"&libras="+libras+"&estatura="+estaturaFormated+"&edad="+edadFormated+"&actividad="+actividad+"&sexo="+sexo);
+      
+        ajax.onreadystatechange=function() {
+          if (ajax.readyState==4) {
+            input1.value=pesoFormated;
+            //input.disabled=false;
+            //var response = ajax.responseText;
+            //divMensaje1.innerHTML=response;
+            
+            var response = ajax.responseText.split("[BRK]");
+            divMensaje1.innerHTML=response[0];
+            divMensaje2.innerHTML=response[1];
+            divMensaje3.innerHTML=response[2];
+            divMensaje4.innerHTML=response[3];
+          }
+        }
+        */
+        
+        if (libras == 1) {
+          peso *= 0.4536;
+        }
+        
+        if (sexo == 1) {
+          var result1 = 66 + (13.7 * peso) + (5 * estatura) - (6.8 * edad);
+        } else {
+          var result1 = 655 + (9.6 * peso) + (1.8 * estatura) - (4.7 * edad);
+        }
+        
+        divMensaje4.innerHTML=Math.round(result1);
+        divMensaje1.innerHTML=Math.round(result1 * actividad);
+        divMensaje3.innerHTML=Math.round(result1 * actividad * 1.15);
+        divMensaje2.innerHTML=Math.round(result1 * actividad * 0.85);
+      }
+      
+      
+      </script>	
+      
+      
+   
+      <div class="general">
+        <div class="td-container tdc-content-wrap">
+            <p>Si quieres saber cuantas calorias debes consumir, <strong>debes hacer
+                    clic&nbsp;en el ingrediente</strong>&nbsp;para acceder a recetas del mismo.</p>
+      
+      
+      <form name="calc" class="form-horizontal"> 
+        <fieldset> 
+      <div  class="well well-large">
+       <div class="form-group">
+         
+          <label class="col-sm-4 control-label" for="peso">Sexo:</label> 
+          
+          <div class="col-sm-8">
+          <label class="checkbox inline" for="sexo1">
+            <input type="radio" checked="" value="M" id="sexo1" name="sexo"> Hombre	</label>
+        
+        <label class="checkbox inline" for="sexo2">
+            <input type="radio" value="F" id="sexo2" name="sexo"> Mujer	</label>
+          </div>
+        </div>
+       <div class="form-group">
+          <label for="peso" class="col-sm-4 control-label">Peso:</label> 
+          <div class="col-sm-8">
+          <input maxlength="5" type="text" class="span2" id="peso" name="peso"> 
+          <label class="checkbox inline"  for="tipopeso1" class="noprompt"><input type="radio" checked="" value="K" id="tipopeso1" name="tipopeso"> Kilos</label> 
+          <label class="checkbox inline"  for="tipopeso2" class="noprompt"><input type="radio" value="L" id="tipopeso2" name="tipopeso"> Libras</label> 
+          </div>
+        </div>
+       <div class="form-group">
+          <label for="estatura" class="col-sm-4 control-label">Estatura:</label> 
+          <div class="col-sm-8">
+          <div class="input-group">
+          <input maxlength="3" id="estatura" type="text" class="span2 form-control" name="estatura"> 
+          <div class="input-group-addon">cm</div> 
+          </div>
+          </div>
+        </div>
+         <div class="form-group"> 
+          <label for="edad" class="col-sm-4 control-label">Edad:</label> 
+          <div class="col-sm-8">
+          <div class="input-group">
+          <input maxlength="2" type="text" class="span2 form-control" id="edad" name="edad"> 
+          <div class="input-group-addon">años</div>
+          </div>
+          </div> 
+        </div>
+       <div class="form-group"> 
+          <label for="actividad" class="col-sm-4 control-label">Nivel de actividad:</label> 
+          <div class="col-sm-8">
+          <select id="actividad" size="1" name="actividad"> 
+            <option selected="true" value="1.2">Sedentario</option> 
+            <option value="1.375">Actividad ligera</option> 
+            <option value="1.55">Actividad moderada</option> 
+            <option value="1.725">Actividad intensa</option> 
+            <option value="1.9">Actividad muy intensa</option> 
+          </select>   </div> </div>
+        <div style="align-items: center;"> 
+          <span type="button" name="Button1" class="btn btn-success" id="Button1" onclick="calcIt();return false;" value="Calcular">Calcular </span>
+      </div> 
+      </div>
+      
+        <div class="alert alert-success">
+        <div> 
+          <label>Metabolismo basal:</label> 
+          <span id="tmb" style="margin-left: .5em; font-size:18px; font-weight:bold;"></span>
+        </div>
+       <div> 
+          <label>Calorías necesarias para mantener el peso:</label> 
+          <span id="mantener" style="margin-left: .5em; font-size:18px; font-weight:bold;"></span>
+        </div>
+        <div>
+          <label>Calorías para adelgazar:</label> 
+          <span id="quemar" style="margin-left: .5em; font-size:18px; font-weight:bold;"></span>
+        </div>
+        <div>
+          <label>Calorías para subir de peso:</label> 
+          <span id="subir" style="margin-left: .5em; font-size:18px; font-weight:bold;"></span>
+        </div> 
+        </div>
+        </fieldset> 
+      </form>
+      <div id="M802301ScriptRootC1327530"></div> <script src="https://jsc.adgage.es/c/a/calcuworld.com.1327530.js" async></script> 
+        </div>
+      </div>
+      
+<!-- Composite End -->
+
+
+
+
+
+    <!--  footer -->
+    <footr>
+      <div class="footer ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+             <a href="#" class="logo_footer"> <img src="images/logggo.PNG" alt="#"/></a>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
+                  <div class="address">
+                    <h3>Correo </h3>
+                    <ul class="loca">
+                      <li>
+                        <a href="#"></a>
+                          <a href="#"></a>(+52 7224003548) </li>
+                          <li>
+                            <a href="#"></a>dbivann56@gmail.com</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="address">
+                          <h3>Redes Sociales</h3>
+                          <ul class="Menu_footer">
+                            <li class="active"> <a href="#">Twitter</a> </li>
+                            <li><a href="#">Facebook</a> </li>
+                            <li><a href="#">Instagram</a> </li>
+                            <li><a href="#">Linkdin</a> </li>
+                          </ul>
+                        </div>
+                      </div>
+                     
+                     
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="address">
+                          <h3>Acerca de</h3>
+                          <ul class="Menu_footer">
+                            <li><a href="#">Sobre la página</a> </li>
+                            <li><a href="#">Infromacion</a> </li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="copyright">
+                <div class="container">
+                  <p>Copyright © 2022 Design by <a href="https://html.design/">Iván Duarte Bravo </a></p>
+                </div>
+              </div>
+            </div>
+          </footr>
+          <!-- end footer -->
+          <!-- Javascript files-->
+          <script src="js/jquery.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.bundle.min.js"></script>
+          <script src="js/jquery-3.0.0.min.js"></script>
+          <script src="js/plugin.js"></script>
+          <!-- sidebar -->
+          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+          <script src="js/custom.js"></script>
+          <script src="js/jquery.fancybox.min.js"></script>
+
+
+          
+
+
+
+</body>
+
+</html>
+
