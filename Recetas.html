@@ -16,16 +16,16 @@
   <meta name="author" content="">
   <!-- fevicon -->
   <link rel="icon" href="images/fevicon.png" type="image/gif" />
-  
+
   <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- style css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Responsive-->
-  <link rel="stylesheet" href="css/responsive.css">  
+  <link rel="stylesheet" href="css/responsive.css">
   <!-- Scrollbar Custom CSS -->
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
- 
+
 
 </head>
 <!-- body -->
@@ -53,8 +53,8 @@
               </div>
             </div>
             <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
-         
-               <div class="menu-area">
+
+              <div class="menu-area">
                 <div class="limit-box">
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
@@ -63,102 +63,1193 @@
                       <li> <a href="Recetas.html">Recetas</a> </li>
                       <li> <a href="pagIMC.html">¿Saber mi IMC?</a> </li>
                       <li> <a href="calDiarias.html">Calculadora</a> </li>
-                      <li> <a href="QuemaCalori.html">Acerca de</a> </li>
-                     
-                     <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
-                     </ul>
-                   </nav>
-                 </div>
-               </div> 
-              </div>
-           </div>
-         </div>
-       </div>
-     </div>
-     <!-- end header inner -->
 
 
-
-
-
-
-
-
-     <!--  footer -->
-    <footr>
-        <div class="footer ">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-               <a href="#" class="logo_footer"> <img src="images/logggo.PNG" alt="#"/></a>
-              </div>
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                <div class="row">
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
-                    <div class="address">
-                      <h3>Correo </h3>
-                      <ul class="loca">
-                        <li>
-                          <a href="#"></a>
-                            <a href="#"></a>(+52 7224003548) </li>
-                            <li>
-                              <a href="#"></a>dbivann56@gmail.com</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                          <div class="address">
-                            <h3>Redes Sociales</h3>
-                            <ul class="Menu_footer">
-                              <li class="active"> <a href="#">Twitter</a> </li>
-                              <li><a href="#">Facebook</a> </li>
-                              <li><a href="#">Instagram</a> </li>
-                              <li><a href="#">Linkdin</a> </li>
-                            </ul>
-                          </div>
-                        </div>
-                       
-                       
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                          <div class="address">
-                            <h3>Acerca de</h3>
-                            <ul class="Menu_footer">
-                              <li><a href="#">Sobre la página</a> </li>
-                              <li><a href="#">Infromacion</a> </li>
-                              
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-  
-                  </div>
-  
-                </div>
-                <div class="copyright">
-                  <div class="container">
-                    <p>Copyright © 2022 Design by <a href="https://html.design/">Iván Duarte Bravo </a></p>
-                  </div>
+                      <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
-            </footr>
-            <!-- end footer -->
-            <!-- Javascript files-->
-            <script src="js/jquery.min.js"></script>
-            <script src="js/popper.min.js"></script>
-            <script src="js/bootstrap.bundle.min.js"></script>
-            <script src="js/jquery-3.0.0.min.js"></script>
-            <script src="js/plugin.js"></script>
-            <!-- sidebar -->
-            <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-            <script src="js/custom.js"></script>
-            <script src="js/jquery.fancybox.min.js"></script>
-  
-  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header inner -->
+
+
+
+    <div class="innerArticle__body">
+      <div class="innerArticle__container">
+        <style>
+          .newsType.liveType p:first-child:first-letter {
+            font-size: 18px;
+            line-height: 1.56;
+            float: none;
+            font-family: Roboto, sans-serif;
+            padding-right: 0;
+            line-height: inherit
+          }
+
+          .newsType__content--closed {
+            display: none
+          }
+
+          .newsType__content--closed+.news-body-summary p {
+            position: relative
+          }
+
+          .newsType__content--closed+.news-body-summary p:after {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+            bottom: 0;
+            content: "";
+            height: 100px;
+            left: 0;
+            position: absolute;
+            width: 100%
+          }
+
+          .newsType__content p {
+            font-size: 18px;
+            line-height: 1.56;
+            margin-bottom: 24px;
+            display: inline-block;
+            width: 100%
+          }
+
+          .newsType__content>p a {
+            font-weight: bold;
+            color: #f27466
+          }
+
+          .newsType__content>p a:hover {
+            color: #f7aca3
+          }
+
+          .newsType__content>p img {
+            max-width: 100%
+          }
+
+          .newsType__content>p:first-child:first-letter {
+            font-size: 46px;
+            font-family: Playfair, Garamond, "Hoefler Text", "Times New Roman", Times, serif;
+            float: left;
+            line-height: 1.2;
+            padding-right: 12px
+          }
+
+          .newsType__content>p+.bodyObject,
+          .newsType__content>p+.revUnit+.bodyObject,
+          .newsType__content>p+.twitter-tweet {
+            margin-top: 16px !important
+          }
+
+          .newsType__content .revUnit {
+            position: relative;
+            margin: 16px auto 40px;
+            min-height: 600px
+          }
+
+          .newsType__content .revUnit div:first-child {
+            position: sticky;
+            top: 66px
+          }
+
+          @media(min-width: 768px) {
+            .newsType__content .revUnit {
+              display: none
+            }
+          }
+
+          .newsType__content .bodyBlockquote {
+            font-family: Playfair, Garamond, "Hoefler Text", "Times New Roman", Times, serif;
+            font-size: 20px;
+            border-left: 4px solid #121212;
+            padding-left: 16px;
+            line-height: 1.3
+          }
+
+          @media(min-width: 996px) {
+            .newsType__content .bodyBlockquote {
+              font-size: 28px;
+              line-height: 1.14
+            }
+          }
+
+          .newsType__content .bodyImage {
+            width: 100%
+          }
+
+          .newsType__content .bodyImage__wrapper {
+            position: relative
+          }
+
+          @media(min-width: 996px) {
+            .newsType__content .bodyImage__wrapper--portrait {
+              width: 87.5%
+            }
+          }
+
+          .newsType__content .bodyImage__caption {
+            font-size: 14px;
+            color: #717171;
+            margin-top: 8px
+          }
+
+          @media(min-width: 768px) {
+            .newsType__content .bodyImage__caption {
+              font-size: 15px
+            }
+          }
+
+          .newsType__content .bodyImage__link {
+            color: #f27466
+          }
+
+          .newsType__content .bodyImage__link:hover {
+            color: #f7aca3
+          }
+
+          .newsType__content .bodyImage__link:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%
+          }
+
+          .newsType__content .bodyObject {
+            margin-bottom: 40px
+          }
+
+          .newsType__content .bodyObject>iframe {
+            max-width: 100%
+          }
+
+          .newsType__content .explodedView {
+            margin-top: 24px;
+            margin-bottom: 40px
+          }
+
+          .newsType__content .bodyList {
+            font-size: 18px;
+            line-height: 1.56;
+            padding-left: 40px;
+            margin-bottom: 24px
+          }
+
+          .newsType__content .bodyList a {
+            font-weight: bold;
+            color: #f27466
+          }
+
+          .newsType__content .bodyList a:hover {
+            color: #f7aca3
+          }
+
+          .newsType__content .bodyList--unordered {
+            list-style: disc
+          }
+
+          .newsType__content .bodyList--ordered {
+            list-style: decimal
+          }
+
+          .newsType__content ec-ecommerce-body-tag[data-type=button],
+          .newsType__content ec-ui-button {
+            max-width: 308px;
+            margin-bottom: 24px;
+            display: block
+          }
+
+          .newsType__content .bodyTitle {
+            font-weight: bold;
+            font-size: 24px;
+            font-family: Roboto, sans-serif;
+            line-height: 26px;
+            margin-bottom: 16px;
+            margin-top: 16px
+          }
+
+          .newsType__content .bodyTitle a {
+            color: #f27466
+          }
+
+          .newsType__content .bodyTitle a:hover {
+            color: #f7aca3
+          }
+
+          .newsType__content .htmlWrapper {
+            margin-bottom: 40px;
+            margin-top: 16px
+          }
+
+          .newsType__content .htmlWrapper>iframe {
+            margin: 0 !important;
+            max-width: 100%
+          }
+
+          .newsType__content .htmlWrapper>.twitter-tweet,
+          .newsType__content .htmlWrapper>.instagram-media {
+            border: 8px solid #f6f5f5 !important;
+            background: #f6f5f5;
+            min-width: inherit !important;
+            box-sizing: border-box;
+            width: 100%
+          }
+
+          @media(min-width: 996px) {
+
+            .newsType__content .htmlWrapper>.twitter-tweet,
+            .newsType__content .htmlWrapper>.instagram-media {
+              width: 87.5% !important
+            }
+          }
+
+          .newsType__content .htmlWrapper>.instagram-media {
+            box-sizing: initial;
+            max-width: calc(100% - 16px) !important
+          }
+
+          @media(min-width: 996px) {
+            .newsType__content .htmlWrapper>.instagram-media {
+              width: calc(100% * (7 / 8) - 16px) !important
+            }
+          }
+
+          .newsType__content>*:last-child {
+            margin-bottom: 0
+          }
+        </style>
+        <style>
+          .inTextNews {
+            display: flex;
+            position: relative;
+            width: 100%;
+            background-color: #f9f8f2
+          }
+
+          @media(min-width: 996px) {
+            .inTextNews {
+              width: 87.5%
+            }
+          }
+
+          .inTextNews--blog {
+            background-color: #e4f4fb
+          }
+
+          .inTextNews__imgWrapper {
+            flex: 0 0 128px;
+            max-width: 128px
+          }
+
+          @media(min-width: 768px) {
+            .inTextNews__imgWrapper {
+              flex-basis: 144px;
+              max-width: 144px
+            }
+          }
+
+          @media(min-width: 996px) {
+            .inTextNews__imgWrapper {
+              flex-basis: 202px;
+              max-width: 202px
+            }
+          }
+
+          .inTextNews__img {
+            max-width: 100%;
+            width: 100%
+          }
+
+          .inTextNews__text {
+            padding: 8px;
+            min-width: 0
+          }
+
+          @media(min-width: 996px) {
+            .inTextNews__text {
+              padding: 16px
+            }
+          }
+
+          .inTextNews__text .inTextNews__title {
+            color: #121212;
+            font-weight: normal;
+            white-space: normal
+          }
+
+          .inTextNews__title {
+            font-size: 15px;
+            line-height: 1.2;
+            font-family: Playfair, Garamond, "Hoefler Text", "Times New Roman", Times, serif;
+            color: #121212;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden
+          }
+
+          .inTextNews__title:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block
+          }
+
+          .inTextNews__title:hover {
+            color: #717171
+          }
+
+          @media(min-width: 996px) {
+            .inTextNews__title {
+              font-size: 20px
+            }
+          }
+
+          .inTextNews__signature {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 8px;
+            color: #717171
+          }
+
+          @media(min-width: 996px) {
+            .inTextNews__signature {
+              margin-top: 16px
+            }
+          }
+
+          .inTextNews__itemSignature {
+            color: #717171;
+            position: relative;
+            font-size: 15px;
+            padding-right: 13px
+          }
+
+          .inTextNews__itemSignature:not(:last-child):after {
+            content: "";
+            display: block;
+            top: 0;
+            right: 4px;
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            background-color: #717171
+          }
+
+          .inTextNews__label {
+            background-color: #fff;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            padding: 6px 16px;
+            position: absolute;
+            font-family: Playfair, Garamond, "Hoefler Text", "Times New Roman", Times, serif;
+            font-size: 15px;
+            font-style: italic
+          }
+        </style>
+        <div class="innerArticle__content newsType">
+          <style>
+            .editorialKeys {
+              margin-bottom: 40px;
+              position: relative;
+              background-color: #f9f8f2;
+              padding: 32px 24px;
+              margin-top: 0
+            }
+
+            @media(max-width: 767px) {
+              .editorialKeys {
+                width: calc(100% + 16px * 2);
+                margin-left: -16px;
+                padding: 32px 16px
+              }
+            }
+
+            .editorialKeys__title {
+              position: absolute;
+              top: -16.9px;
+              font-style: italic;
+              font-size: 26px;
+              font-family: Playfair, Garamond, "Hoefler Text", "Times New Roman", Times, serif
+            }
+
+            .editorialKeys__content p:last-child {
+              margin-bottom: 0
+            }
+
+            .editorialKeys__content a {
+              color: #f27466
+            }
+
+            .editorialKeys__content a:hover {
+              color: #f7aca3
+            }
+
+            .editorialKeys__itemWrapper {
+              display: flex;
+              position: relative;
+              width: 100%
+            }
+
+            .editorialKeys__itemWrapper:not(:first-child) {
+              margin-top: 24px
+            }
+
+            .editorialKeys__itemImgWrapper {
+              flex: 0 0 108px;
+              max-width: 108px
+            }
+
+            @media(min-width: 996px) {
+              .editorialKeys__itemImgWrapper {
+                flex-basis: 142px;
+                max-width: 142px
+              }
+            }
+
+            .editorialKeys__itemImg {
+              max-width: 100%;
+              width: 100%
+            }
+
+            .editorialKeys__itemText {
+              padding: 0 12px 0 16px;
+              min-width: 0
+            }
+
+            @media(min-width: 996px) {
+              .editorialKeys__itemText {
+                padding: 0 16px
+              }
+            }
+
+            .editorialKeys__itemText .editorialKeys__itemTitle {
+              color: #121212
+            }
+
+            .editorialKeys__itemText .editorialKeys__itemTitle:hover {
+              color: #717171
+            }
+
+            .editorialKeys__itemPreTitle {
+              font-weight: 700;
+              font-size: 15px;
+              line-height: 1.33;
+              margin-bottom: 8px
+            }
+
+            .editorialKeys__itemTitle {
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 1.2;
+              font-family: Playfair, Garamond, "Hoefler Text", "Times New Roman", Times, serif;
+              letter-spacing: -0.1px;
+              color: #121212;
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              white-space: normal
+            }
+
+            .editorialKeys__itemTitle:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              display: block
+            }
+
+            @media(min-width: 996px) {
+              .editorialKeys__itemTitle {
+                font-size: 20px;
+                -webkit-line-clamp: 2
+              }
+            }
+
+            .editorialKeys__itemSignatures {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              color: #717171;
+              margin-top: 8px
+            }
+
+            @media(max-width: 995px) {
+              .editorialKeys__itemSignatures {
+                display: none
+              }
+            }
+
+            .editorialKeys__itemSignature {
+              color: #717171;
+              position: relative;
+              font-size: 15px;
+              padding-right: 13px
+            }
+
+            .editorialKeys__itemSignature:not(:last-child):after {
+              content: "";
+              display: block;
+              top: 0;
+              right: 4px;
+              position: absolute;
+              height: 100%;
+              width: 1px;
+              background-color: #717171
+            }
+
+            .editorialKeys__itemLabel {
+              background-color: #fff;
+              bottom: 0;
+              left: 0;
+              text-align: center;
+              padding: 6px 16px;
+              position: absolute;
+              font-family: Playfair, Garamond, "Hoefler Text", "Times New Roman", Times, serif;
+              font-size: 15px;
+              font-style: italic
+            }
+          </style>
+          <style>
+            .articleHeaderBar {
+              display: flex;
+              align-items: center;
+              justify-content: space-between
+            }
+
+            @media(max-width: 995px) {
+              .articleHeaderBar {
+                flex-wrap: wrap
+              }
+            }
+
+            @media(max-width: 995px) {
+
+              .articleHeaderBar__sectionDate,
+              .articleHeaderBar__sectionShare {
+                flex: 0 0 100%
+              }
+            }
+
+            .articleHeaderBar__sectionShare {
+              display: flex;
+              justify-content: flex-start;
+              align-self: flex-start
+            }
+
+            @media(max-width: 995px) {
+              .articleHeaderBar__sectionShare {
+                margin-top: 24px
+              }
+            }
+
+            .articleHeaderBar__sectionShare--bottom {
+              margin-top: 24px
+            }
+
+            .articleHeaderBar .dateTime {
+              font-size: 15px;
+              line-height: 1.33;
+              color: #717171
+            }
+
+            .articleHeaderBar .dateTime__updated {
+              padding-left: 10px
+            }
+          </style>
+          <style>
+            .authorSignature {
+              font-size: 15px;
+              margin-bottom: 4px;
+              line-height: 18px
+            }
+
+            .authorSignature__item {
+              display: inline-block;
+              position: relative;
+              margin-bottom: 4px
+            }
+
+            .authorSignature__item:not(:last-child) {
+              padding-right: 16px
+            }
+
+            .authorSignature__item:not(:last-child):after {
+              content: "";
+              display: block;
+              top: 0;
+              right: 8px;
+              position: absolute;
+              height: 100%;
+              width: 1px;
+              background-color: #979797
+            }
+
+            .authorSignature__name,
+            .authorSignature__link {
+              font-weight: bold;
+              color: #121212
+            }
+
+            .authorSignature__link:hover {
+              color: #717171
+            }
+
+            .authorSignature__icon {
+              position: relative;
+              top: 2px;
+              padding-left: 8px
+            }
+          </style>
+          <div class="articleHeaderBar innerArticle__bar">
             
-  
-  
-  
-  </body>
-  
-  </html>
+            <aside class="articleHeaderBar__sectionShare">
+              <style>
+                .shareBar {
+                  justify-content: center;
+                  align-items: center;
+                  display: flex;
+                  height: 34px
+                }
+
+                .shareBar ul:first-child>*:first-child {
+                  margin: 0
+                }
+
+                .shareBar__social,
+                .shareBar__actions {
+                  display: flex;
+                  height: 100%
+                }
+
+                .shareBar__socialItem,
+                .shareBar__actionsItem {
+                  display: flex;
+                  margin-left: 16px
+                }
+
+                .shareBar__socialItem a,
+                .shareBar__actionsItem a {
+                  display: inherit;
+                  height: 34px;
+                  width: 34px;
+                  justify-content: center;
+                  align-items: center
+                }
+
+                .shareBar__socialItem path,
+                .shareBar__actionsItem path {
+                  fill: #121212
+                }
+
+                .shareBar__socialItem:hover path,
+                .shareBar__actionsItem:hover path {
+                  fill: #717171
+                }
+
+                .shareBar__socialItem {
+                  background: #f9f8f2;
+                  border-radius: 34px
+                }
+
+                @media(min-width: 768px) {
+                  .shareBar__socialItem--whatsapp {
+                    display: none
+                  }
+                }
+
+                .shareBar__actions:before {
+                  content: "";
+                  margin-left: 16px;
+                  display: block;
+                  height: 100%;
+                  width: 1px;
+                  background: #e4e4e4
+                }
+              </style>
+              <div class="shareBar ">
+                <ul class="shareBar__social">
+                  <li class="shareBar__socialItem shareBar__socialItem--facebook"> <a target="_blank"
+                      rel="nofollow noreferrer" data-event-emitter="amplitude" data-event-emitter-action="click"
+                      data-event-emitter-data="{&quot;eventName&quot;: &quot;on_tap_social_share&quot;, &quot;event_type&quot;:&quot;facebook&quot;, &quot;position&quot;:&quot;header&quot;}"></a>
+                                <path
+                                  d="M6.4022 19.7239v-8.9964H9.309l.4361-3.507H6.4022V4.9817c0-1.015.2704-1.7068 1.6736-1.7068l1.7869-.0007V.1373C9.5537.0956 8.493 0 7.2584 0c-2.578 0-4.3429 1.634-4.3429 4.6344v2.586H0v3.5071h2.9155v8.9964h3.4867z">
+                                </path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg> </a> </li>
+                  <li class="shareBar__socialItem shareBar__socialItem--twitter"> <a target="_blank"
+                      rel="nofollow noreferrer" data-event-emitter="amplitude" data-event-emitter-action="click"
+                      data-event-emitter-data="{&quot;eventName&quot;: &quot;on_tap_social_share&quot;, &quot;event_type&quot;:&quot;twitter&quot;, &quot;position&quot;:&quot;header&quot;}"></a>
+                        <path fill="#121212" fill-rule="evenodd"
+                          d="M18.4833 2.4089c-.68.3022-1.36.5289-2.1155.6044.7555-.4533 1.36-1.2089 1.6622-2.04-.7556.4534-1.5111.7556-2.3422.9067a3.6576 3.6576 0 0 0-2.72-1.2089c-2.04 0-3.7022 1.6622-3.7022 3.7022 0 .3023 0 .6045.0755.8311-3.1733-.151-5.8933-1.6622-7.7067-3.9288-.3777.6044-.5288 1.2088-.5288 1.8888 0 1.2845.68 2.4178 1.6622 3.0978-.6045 0-1.209-.151-1.6622-.4533v.0755c0 1.8134 1.2844 3.3245 2.9466 3.6267-.3022.0756-.6044.1511-.9822.1511-.2267 0-.4533 0-.68-.0755.4533 1.511 1.8133 2.5689 3.4756 2.5689-1.2845.9822-2.8712 1.5866-4.609 1.5866-.3022 0-.6044 0-.9066-.0755 1.6622 1.0577 3.6267 1.6622 5.6667 1.6622 6.8755 0 10.5777-5.6667 10.5777-10.5778v-.4533c.7556-.529 1.36-1.209 1.889-1.889z">
+                        </path>
+                      </svg> </a> </li>
+                  <li class="shareBar__socialItem shareBar__socialItem--whatsapp"> <a target="_blank"
+                      rel="nofollow noreferrer" data-event-emitter="amplitude" data-event-emitter-action="click"
+                      data-event-emitter-data="{&quot;eventName&quot;: &quot;on_tap_social_share&quot;, &quot;event_type&quot;:&quot;whatsapp&quot;, &quot;position&quot;:&quot;header&quot;}"
+                      href="whatsapp://send?text=Las+cinco+recetas+m%C3%A1s+saludables+%28y+r%C3%A1pidas%29+para+la+llegada+del+oto%C3%B1o+ https%3A%2F%2Fwww.elconfidencial.com%2Falma-corazon-vida%2F2013-10-28%2Flas-cinco-recetas-mas-saludables-y-rapidas-para-la-llegada-del-otono_44507%2F%3Futm_source%3Dwhatsapp%26utm_medium%3Dsocial%26utm_campaign%3DBotoneraWeb">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                        <path fill="#000" fill-rule="evenodd"
+                          d="M10.0005 0C4.4851 0 0 4.4854 0 10.0005c0 2.1871.707 4.2141 1.9047 5.8634L.6559 19.577l3.8423-1.2304C6.0768 19.3906 7.9683 20 10.0005 20 15.5136 20 20 15.5142 20 10.0005 20 4.4855 15.5136 0 10.0005 0zm5.957 13.1382c-.0747-.1213-.2717-.1939-.5658-.3392-.2954-.1449-1.7477-.8482-2.018-.9445-.2702-.0966-.4685-.1453-.6641.145-.197.2904-.763.9448-.9357 1.1387-.1718.1943-.3435.218-.639.0726-.2958-.1449-1.2475-.4526-2.3748-1.4408-.877-.7709-1.4697-1.7209-1.6428-2.0114-.1714-.2902-.017-.4473.1292-.5922.1332-.1307.2957-.3392.4433-.508.1479-.1704.197-.292.2954-.4859.0985-.1939.0494-.3628-.0252-.508-.0732-.145-.6641-1.5743-.9105-2.1564-.2447-.5804-.491-.4841-.6642-.4841-.1717 0-.3687-.024-.5656-.024-.197 0-.5166.0726-.7868.3632C4.7626 5.6534 4 6.3567 4 7.7847c0 1.429 1.057 2.8107 1.2046 3.0033.1479.1942 2.0419 3.2225 5.0437 4.3853 3.0017 1.1624 3.0017.7746 3.5432.7256.5405-.0473 1.7464-.702 1.9928-1.3803.2464-.6784.2464-1.2601.1731-1.3804z">
+                        </path>
+                      </svg> </a> </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+          <style>
+            .premiumBar {
+              display: none;
+              flex-basis: 100%;
+              font-size: 14px;
+              font-weight: bold
+            }
+
+            .premiumBar__exclusiveTag {
+              background: #d4dde1;
+              color: #1a1a1a;
+              display: inline-block;
+              margin: -2px 4px 0 0;
+              padding: 2px 4px
+            }
+
+            .premiumBar--open {
+              display: flex;
+              margin-bottom: 24px
+            }
+          </style>
+          
+          
+          <div class="newsType__content news-body-complete ">
+            <p> Con la llegada del frío y las lluvias nuestra nevera y nuestro cuerpo nos piden nuevos alimentos. Atrás
+              quedaron los tomates, los melones y las ensaladas yllega el tiempo de los grandes guisos. <strong>La
+                bajada de las temperaturas nos empuja a consumir alimentos más calóricos y tenemos que tener
+                cuidado</strong>, pues si unimos una mayor ingesta a una menor práctica de ejercicio (algo que también
+              ocurre en esta época) podemos acabar ganando unos kilos que, si se juntan con la llegada de las navidades,
+              pueden ocasionar un desastre. </p>
+            <div id="roba_c454bd8e-5006-11ed-95d2-1e3b89c420cc" class="revUnit revUnit--placeholder"
+              data-dfp-type="roba" data-dfp-name="elconfidencial/alma-corazon-vida" widget-display="1"
+              data-dfp-widget-name="elconfidencial/alma-corazon-vida" data-dfp-size="[[300,250],[300,600],[300,300]]"
+              data-dfp-mapping="mappingRobaBody"></div>
+            <p> A la hora de elegir nuestro menú semanal <strong>hay una serie de alimentos que conviene priorizar en
+                otoño e invierno,</strong> no sólo por sus importantes cualidades nutricionales, sino también porque son
+              productos de temporada que no encontraremos tan baratos, ni con tanta calidad, en ninguna otra época del
+              año. </p>
+            <p> Esta es una selección de recetas sencillas, rápidas y recurrentes para el día a día: no hace
+              faltagrandes despliegues, sólo una mínima disposición para cuidar nuestra salud comiendo de forma
+              saludable. </p>
+            <p> <strong>1. Brócoli asado picante</strong> </p>
+            <p> El brócoli es una verdura de invierno que <strong>empieza a aparecer en estas fechas por nuestras
+                fruterías.</strong>Tiene un alto contenido en fibra y aporta muchas vitaminas y pocas calorías. Además
+              contiene un compuesto, el sulforafano, al que se atribuyen propiedades antioxidantes y antibacterianas.
+              Además, algunos estudios han asociado el brócoli con determinadas propiedades <a
+                target="_blank">antiartitris</a>. </p>
+            <p> En México no hay demasiada tradición en lo que al brócoli se refiere pero, como todas las verduras, se
+              puede preparar de muchísimas formas. Valga como ejemplo esta receta de brócoli asado. </p>
+            <figure class="bodyObject bodyImage__wrapper bodyImage__wrapper--landscape">
+              <div class="lqip lqip--landscapeWide"> <img class="lqip__placeholder" alt="placeholder"
+                  src="images/brocoliasado.jpg"
+                  style="opacity: 1;"> <img class="bodyImage lqip__original"
+                  sizes=" (min-width: 996px) 640px, (min-width: 768px) 50.65vw, calc(100vw - 32px)" alt=""
+                  decoding="async"
+                    sizes=" (min-width: 996px) 640px, (min-width: 768px) 50.65vw, calc(100vw - 32px)" alt=""
+                    decoding="async"> </noscript></div>
+              <figcaption class="bodyImage__caption"> </figcaption>
+            </figure>
+            <p> <strong>Ingredientes para 4 personas:</strong> </p>
+            <div id="roba_c454db2a-5006-11ed-b044-1e3b89c420cc" class="revUnit revUnit--placeholder"
+              data-dfp-type="roba" data-dfp-name="elconfidencial/alma-corazon-vida" widget-display="1"
+              data-dfp-widget-name="elconfidencial/alma-corazon-vida" data-dfp-size="[[300,250],[300,600],[300,300]]"
+              data-dfp-mapping="mappingRobaBody"></div>
+            <ul class="bodyList bodyList--unordered">
+              <li class="bodyList__item">500 gramos de brócoli</li>
+              <li class="bodyList__item">4 dientes de ajo bien picados</li>
+              <li class="bodyList__item">Pimienta de cayena o guindilla molida</li>
+              <li class="bodyList__item">Aceite de oliva</li>
+              <li class="bodyList__item">Sal y pimienta</li>
+            </ul>
+            <p> Precalienta el horno a 220 grados. En un bol grande, mezcla el brócoli limpio y cortado en trozos de
+              unos cinco centímetroscon dos cucharas soperas de aceite de oliva. Salpimenta la mezcla. Coloca el brócoli
+              en una fuente para el horno y ásalo durante 15 minutos. Mientras, mezcla otras dos cucharas soperas de
+              aceite con el ajo picado y la pimienta de cayena o guindilla molida (dependiendo del grado de picor que
+              prefieras puedes echar más o menos, media cucharilla suele ser suficiente). Cuando pasen los quince
+              minutos reparte el condimento sobre el brócoli, mézclalo bien y vuelve a meter la verdura en el horno unos
+              10 minutos, hasta que el brócoli empiece a adquirir tonos marrones. Sírvelo caliente. </p>
+            <p> <strong>2. Salmón al horno</strong> </p>
+            <p> En otoño e invierno suele disminuir nuestro consumo de pescadoy no hay ninguna razón para que esto
+              ocurra. El salmón, además, tiene la misma calidad durante todo el año, es rico en vitamina D, <a
+                target="_blank">algo que nos viene genial ahora que hay menos horas de sol</a>, y <strong>es una
+                importante fuente de ácidos grasos omega 3</strong>, que tienen un importante papel en la prevención de
+              enfermedades cardiovasculares. </p>
+            <div id="roba_c454e912-5006-11ed-995f-1e3b89c420cc" class="revUnit revUnit--placeholder"
+              data-dfp-type="roba" data-dfp-name="elconfidencial/alma-corazon-vida" widget-display="1"
+              data-dfp-widget-name="elconfidencial/alma-corazon-vida" data-dfp-size="[300,600]"
+              data-dfp-mapping="mappingRobaBody"></div>
+            <figure class="bodyObject bodyImage__wrapper bodyImage__wrapper--landscape">
+              <div style="align-content: center;" class="lqip lqip--landscapeWide"> <img class="lqip__placeholder" alt="placeholder"
+                  src="images/salmo.jpg"
+                  style="opacity: 1;"> <img class="bodyImage lqip__original"
+                  sizes=" (min-width: 996px) 640px, (min-width: 768px) 50.65vw, calc(100vw - 32px)"
+                  style="opacity: 1;"> <noscript> <img class="bodyImage" style="opacity: 1"
+                    sizes=" (min-width: 996px) 640px, (min-width: 768px) 50.65vw, calc(100vw - 32px)"
+                    alt="Salmón al horno con eneldo. (Corbis)" decoding="async"> </noscript></div>
+              <figcaption class="bodyImage__caption"> </figcaption>
+            </figure>
+            <p> <strong>Ingredientes para 4 personas:</strong> </p>
+            <ul class="bodyList bodyList--unordered">
+              <li class="bodyList__item">4 filetes de salmón de 150/200 gramos</li>
+              <li class="bodyList__item">1 limón</li>
+              <li class="bodyList__item">Eneldo</li>
+              <li class="bodyList__item">4 dientes de ajo</li>
+              <li class="bodyList__item">Sal y pimienta</li>
+            </ul>
+            <p> Precalienta el horno a 200 grados. Coloca los filetes de salmón en una fuente de horno. Corta el limón
+              en cuatro trozos y exprime cada trozo sobre uno de los filetes. Pela y pica cada diente de ajo, y échalos
+              también sobre cada uno de los filetes. Espolvorea cada filete con una pizca de eneldo (si te pasas sólo
+              sabráa eneldo) y añade pimienta y sal. Hornea los filetes durante unos 20 minutos o hasta que veas que
+              están hechos. </p>
+            <p> <strong>3. Crema de calabaza</strong> </p>
+            <div id="roba_c454fd3a-5006-11ed-a749-1e3b89c420cc" class="revUnit revUnit--placeholder"
+              data-dfp-type="roba" data-dfp-name="elconfidencial/alma-corazon-vida" widget-display="1"
+              data-dfp-widget-name="elconfidencial/alma-corazon-vida" data-dfp-size="[300,600]"
+              data-dfp-mapping="mappingRobaBody"></div>
+            <p> La calabaza, que ahora mismo está en temporada y se encuentra casi regalada en las fruterías, <strong>es
+                una hortaliza baja en calorías con un alto contenido en fibra y vitamina A</strong>. Su color naranja es
+              consecuencia de su alto contenido de beta caroteno que ayuda a prevenir enfermedades del corazón. Hay
+              múltiples formas de preparar la calabaza. Se puede tomar simplemente cocida, acompañada de patatas, pero
+              en España como siempre se ha comido es en puré, y no hay receta más sencilla en el universo. </p>
+            <figure class="bodyObject bodyImage__wrapper bodyImage__wrapper--landscape">
+              <div class="lqip lqip--landscapeWide"> <img class="lqip__placeholder" alt="placeholder"
+                  src="images/crema_de_calabaza_y_zanah.jpg"
+                  style="opacity: 1;"> <img class="bodyImage lqip__original"
+                  sizes=" (min-width: 996px) 640px, (min-width: 768px) 50.65vw, calc(100vw - 32px)"
+                  style="opacity: 1;"> <noscript> <img class="bodyImage" style="opacity: 1"
+                    sizes=" (min-width: 996px) 640px, (min-width: 768px) 50.65vw, calc(100vw - 32px)"
+                    alt="Crema de Calabaza. (BocaDorada/CC)" decoding="async"> </noscript></div>
+              <figcaption class="bodyImage__caption"> </figcaption>
+            </figure>
+            <p> <strong>Ingredientes para 2 personas:</strong> </p>
+            <ul class="bodyList bodyList--unordered">
+              <li class="bodyList__item">1 trozo de calabaza de unos 450 gramos</li>
+              <li class="bodyList__item">250 gramos de patata</li>
+              <li class="bodyList__item">Un puerro mediano</li>
+              <li class="bodyList__item">2 zanahorias</li>
+              <li class="bodyList__item">Aceite de oliva</li>
+              <li class="bodyList__item">Sal y pimienta</li>
+            </ul>
+            <p> Pon cinco vasos de agua a cocer en una cazuela. Pela la calabaza, lávala, retira las pepitas y córtala
+              en trozos. Pela, lava y corta también los puerros, las zanahorias y las patatas. Cuando el agua esté
+              caliente, echa todas las verduras, añade dos cucharadas de aceite y sal y pimienta al gusto. Tapa la olla
+              y deja cocer la mezcla 25 minutos a fuego medio. Tras esto pasa la crema por la batidora eléctrica o el
+              pasapurés. La crema es exquisita si además se le añade un par de quesitos, pero claro, aumentan las
+              calorías del plato. </p>
+            <div id="roba_c455114e-5006-11ed-b914-1e3b89c420cc" class="revUnit revUnit--placeholder"
+              data-dfp-type="roba" data-dfp-name="elconfidencial/alma-corazon-vida" widget-display="1"
+              data-dfp-widget-name="elconfidencial/alma-corazon-vida" data-dfp-size="[300,600]"
+              data-dfp-mapping="mappingRobaBody"></div>
+            <p> <strong>4. Alubias con verduras en olla exprés</strong> </p>
+            <p> Las legumbres no son un alimento estacional, y se pueden encontrar las mejores variedades todo el año,
+              pero no cabe duda de quecomerse un guisote de alubias no es lo que más apetece en verano. Por ello,
+              <strong>ahora que llega el frio, es el mejor momento para recuperar uno de los alimentos más
+                completos</strong> con el que contamos en estas tierras. </p>
+            <p> Las legumbres son baratas y muy fáciles de cocinar (pese a que muchos piensen lo contrario). <strong>Son
+                un alimento muy rico en proteínas y fibras</strong>, lo que las convierte en un buen sustituto de la
+              carne, indispensable para los vegetarianos, pero recomendable para todo aquel que quiera disminuir el
+              consumo de proteína animal. </p>
+            <div id="roba_c455181a-5006-11ed-b80d-1e3b89c420cc" class="revUnit revUnit--placeholder"
+              data-dfp-type="roba" data-dfp-name="elconfidencial/alma-corazon-vida" widget-display="1"
+              data-dfp-widget-name="elconfidencial/alma-corazon-vida" data-dfp-size="[300,600]"
+              data-dfp-mapping="mappingRobaBody"></div>
+            <p> En concreto las alubias, pintas, rojas o negras (como las de Tolosa), tienen una pequeña cantidad de
+              ácidos omega 3 y, cuanto más oscuro sea el color de la alubia, más rica es en antioxidantes. <strong>Para
+                que este plato sea del todo saludable lo mejor es prepararlo sólo con verduras</strong>, las alubias son
+              lo suficientemente contundentes como para no necesitar ningún añadido. La receta es orientativa, en
+              realidad, se puede añadir casi cualquier tipo de verduras. </p>
+            <figure class="bodyObject bodyImage__wrapper bodyImage__wrapper--landscape">
+              <div class="lqip lqip--landscapeWide"> <img class="lqip__placeholder" alt="placeholder"
+                  src="images/Alubiasconverduras.jpg"
+                  style="opacity: 1;"> <img class="bodyImage lqip__original"
+                  sizes=" (min-width: 996px) 640px, (min-width: 768px) 50.65vw, calc(100vw - 32px)"
+                  style="opacity: 1;"> <noscript> <img class="bodyImage" style="opacity: 1"
+                    sizes=" (min-width: 996px) 640px, (min-width: 768px) 50.65vw, calc(100vw - 32px)"
+                    alt="Judías pintas con verduras. (Corbis)" decoding="async"> </noscript></div>
+              <figcaption class="bodyImage__caption"> </figcaption>
+            </figure>
+            <p> <strong>Ingredientes para 6 personas:</strong> </p>
+            <ul class="bodyList bodyList--unordered">
+              <li class="bodyList__item">500 gramos de alubias</li>
+              <li class="bodyList__item">1 cebolla</li>
+              <li class="bodyList__item">1 pimiento verde</li>
+              <li class="bodyList__item">1 diente de ajo</li>
+              <li class="bodyList__item">Pimienta de cayena o guindilla (opcional)</li>
+              <li class="bodyList__item">Aceite de oliva</li>
+              <li class="bodyList__item">Sal y pimienta</li>
+            </ul>
+            <p> Esta es la receta más básica para preparar las alubias y <strong>está pensada para hacerlas en el
+                momento, sin necesidad de ponerlas a remojo.</strong> En cualquier caso, si lo que usamos es alubia
+              negra, es preferible que pasen una noche en agua. </p>
+            <div id="roba_c4552c42-5006-11ed-96ce-1e3b89c420cc" class="revUnit revUnit--placeholder"
+              data-dfp-type="roba" data-dfp-name="elconfidencial/alma-corazon-vida" widget-display="1"
+              data-dfp-widget-name="elconfidencial/alma-corazon-vida" data-dfp-size="[300,600]"
+              data-dfp-mapping="mappingRobaBody"></div>
+            <p> Basta con echar las alubias en una olla exprés, pelar y cortar la cebolla en dos mitades, cortar el
+              pimiento, pelar los dientes de ajo, echar algo de guindilla o pimienta de cayena (si se quiere un toque
+              picante) y ponerlo todo en la olla. Tras esto, cubretodo con agua, echaun buen chorretón de aceite, sal y
+              pimienta. Tapa laolla y cocina afuego medio. Cuando la válvula empieza a girar, baja el fuego al mínimo y
+              espera diez minutos. Apaga el fuego, deja reposar, y en unos 10 minutos estarán listas las judías. Si han
+              quedado duras, algo que puede ocurrir dependiendo del tipo de alubia, basta con volver a ponerlas al
+              fuego: elguiso no se nos echará a perder. </p>
+            <p> <strong>5. Batata/Camote al horno</strong> </p>
+            <p> La batata o camote es un tubérculo de invierno cuyo consumo en España se ha limitado siempre a los
+              puestos de castañas navideños. Dado el crecimiento de la población latinoamericana, entre los queel
+              boniato es muy popular, cada vez es más fácil de encontrar en las fruterías.<strong> Se trata de una
+                hortaliza baja en calorías y rica en potasio</strong>, que puede ayudarnos a mantener unos niveles de
+              tensión arterial saludables. Si consumes la piel, además, es una buena fuente de fibra. Es un
+              acompañamiento perfecto para la carne. </p>
+            <div id="roba_c45532fa-5006-11ed-ad1e-1e3b89c420cc" class="revUnit revUnit--placeholder"
+              data-dfp-type="roba" data-dfp-name="elconfidencial/alma-corazon-vida" widget-display="1"
+              data-dfp-widget-name="elconfidencial/alma-corazon-vida" data-dfp-size="[300,600]"
+              data-dfp-mapping="mappingRobaBody"></div>
+            <figure class="bodyObject bodyImage__wrapper bodyImage__wrapper--landscape">
+              <div class="lqip lqip--landscapeWide"> <img class="lqip__placeholder" alt="placeholder"
+                  src="images/camotes-al-horno.jpg"
+                  style="opacity: 1;"> <img class="bodyImage lqip__original"
+                  sizes=" (min-width: 996px) 640px, (min-width: 768px) 50.65vw, calc(100vw - 32px)"
+                  style="opacity: 1;"> <noscript> <img class="bodyImage" style="opacity: 1"
+                    sizes=" (min-width: 996px) 640px, (min-width: 768px) 50.65vw, calc(100vw - 32px)"
+                    alt="Boniato. (Procsilas Moscas)" decoding="async"> </noscript></div>
+              <figcaption class="bodyImage__caption"> </figcaption>
+            </figure>
+            <p> <strong>Ingredientes para 4 personas:</strong> </p>
+            <ul class="bodyList bodyList--unordered">
+              <li class="bodyList__item">4 batatas pequeñas (aproximadamente medio kilo)</li>
+              <li class="bodyList__item">Romero</li>
+              <li class="bodyList__item">Aceite de oliva</li>
+              <li class="bodyList__item">Sal y pimienta</li>
+            </ul>
+            <p> Precalienta el horno a 220 grados. Lava y seca las batatas, córtalas longitudinalmente y, después, corta
+              en cuatro cada mitad. Coloca la batata en un bol y mézclala con 3 cucharas soperas de aceite de oliva,
+              sal, pimienta y romero (se puede echar al gusto otras especias). Coloca papel de aluminio sobre una
+              bandeja de horno y dispón los trozos de batata sobre este. Hornea durante 15 minutos, con unas pinzas dale
+              la vuelta a cada trozo, y hornea otros 15 minutos. Sirve inmediatamente. </p>
+          </div>
+          <div class="newsType__content news-body-summary newsType__content--closed ">
+            <p> Con la llegada del frío y las lluvias nuestra nevera y nuestro cuerpo nos piden nuevos alimentos. Atrás
+              quedaron los tomates, los melones y las ensaladas yllega el tiempo de los grandes guisos. <strong>La
+                bajada de las temperaturas nos empuja a consumir alimentos más calóricos y tenemos que tener
+                cuidado</strong>, pues si unimos una mayor ingesta a una menor práctica de ejercicio (algo que también
+              ocurre en esta época) podemos acabar ganando unos kilos que, si se juntan con la llegada de las navidades,
+              pueden ocasionar un desastre. </p>
+            <div class="EC_payWallDynamic" data-uitest="paywall_dynamic_iframe"></div>
+            <div id="roba_c455481c-5006-11ed-8021-1e3b89c420cc" class="revUnit revUnit--placeholder"
+              data-dfp-type="roba" data-dfp-name="elconfidencial/alma-corazon-vida" widget-display="1"
+              data-dfp-widget-name="elconfidencial/alma-corazon-vida" data-dfp-size="[300,600]"
+              data-dfp-mapping="mappingRobaBody"></div>
+          </div>
+          <div class="finrecetas"></div>
+          <style>
+            .shareBar {
+              justify-content: center;
+              align-items: center;
+              display: flex;
+              height: 34px
+            }
+
+            .shareBar ul:first-child>*:first-child {
+              margin: 0
+            }
+
+            .shareBar__social,
+            .shareBar__actions {
+              display: flex;
+              height: 100%
+            }
+
+            .shareBar__socialItem,
+            .shareBar__actionsItem {
+              display: flex;
+              margin-left: 16px
+            }
+
+            .shareBar__socialItem a,
+            .shareBar__actionsItem a {
+              display: inherit;
+              height: 34px;
+              width: 34px;
+              justify-content: center;
+              align-items: center
+            }
+
+            .shareBar__socialItem path,
+            .shareBar__actionsItem path {
+              fill: #121212
+            }
+
+            .shareBar__socialItem:hover path,
+            .shareBar__actionsItem:hover path {
+              fill: #717171
+            }
+
+            .shareBar__socialItem {
+              background: #f9f8f2;
+              border-radius: 34px
+            }
+
+            @media(min-width: 768px) {
+              .shareBar__socialItem--whatsapp {
+                display: none
+              }
+            }
+
+            .shareBar__actions:before {
+              content: "";
+              margin-left: 16px;
+              display: block;
+              height: 100%;
+              width: 1px;
+              background: #e4e4e4
+            }
+          </style>
+          
+        <style>
+          .articleAside__module {
+            width: 100%;
+            margin-top: 40px
+          }
+
+          @media(min-width: 768px) {
+            .articleAside__module {
+              margin-top: 0;
+              margin-bottom: 100px
+            }
+
+            .articleAside__module:last-child {
+              margin-bottom: 0
+            }
+
+            .articleAside__module--isSticky {
+              flex: 0 1 100%;
+              max-height: 800px
+            }
+
+            .articleAside__module .revUnit {
+              position: sticky;
+              top: calc(50px + var(--revenue-margin));
+              transition: top .15s ease-in;
+              margin-left: auto;
+              margin-right: auto
+            }
+          }
+
+          @media(min-width: 768px)and (max-width: 767px) {
+            .articleAside__module .revUnit {
+              display: none
+            }
+          }
+
+          @media(min-width: 768px) {
+            .articleAside__module .revUnit__wrapper {
+              height: 800px
+            }
+          }
+        </style>
+        
+
+
+
+
+    <!--  footer -->
+    <footr>
+      <div class="footer ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="#" class="logo_footer"> <img src="images/logggo.PNG" alt="#" /></a>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
+                  <div class="address">
+                    <h3>Correo </h3>
+                    <ul class="loca">
+                      <li>
+                        <a href="#"></a>
+                        <a href="#"></a>(+52 7224003548)
+                      </li>
+                      <li>
+                        <a href="#"></a>dbivann56@gmail.com
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="address">
+                    <h3>Redes Sociales</h3>
+                    <ul class="Menu_footer">
+                      <li class="active"> <a href="#">Twitter</a> </li>
+                      <li><a href="#">Facebook</a> </li>
+                      <li><a href="#">Instagram</a> </li>
+                      <li><a href="#">Linkdin</a> </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="address">
+                    <h3>Acerca de</h3>
+                    <ul class="Menu_footer">
+                      <li><a href="#">Sobre la página</a> </li>
+                      <li><a href="#">Infromacion</a> </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <p>Copyright © 2022 Design by <a href="https://html.design/">Iván Duarte Bravo </a></p>
+          </div>
+        </div>
+      </div>
+    </footr>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
