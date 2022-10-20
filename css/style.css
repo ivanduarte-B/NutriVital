@@ -23,9 +23,13 @@
     margin-top: 80px;
     width: max-content;
     height:auto;    
+    background-color: #e9ededd6;
 }
  html {
      scroll-behavior: smooth;
+}
+.finrecetas{
+    padding-top: 200px;
 }
  body {
      color: #666666;
@@ -35,6 +39,7 @@
      font-weight: normal;
      overflow-x: hidden;
 }
+
  a {
      color: #1f1f1f;
      text-decoration: none !important;
@@ -1599,3 +1604,20 @@ transition: all 0.3s ease-in;
 }
 /** end footer **/
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
+
+.indice{
+    background-color: #6b6f6f76;
+    padding: 0.5em 0 0.5em 0;
+    margin: 0 1em 2em 1em;
+    max-width: 1100px;
+    font-size: 15px;
+    border: 1px solid #343434;
+    border-radius: 2px;
+    align-items: center;
+}
+
+#indicee{
+    float: right;
+    width: 500px;
+    height: 600px;
+}
