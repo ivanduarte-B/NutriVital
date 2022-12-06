@@ -17,6 +17,18 @@
       navigator.serviceWorker.register("sw.js");
     }
   </script>
+
+  <script>
+    Push.create("Bienvenido a mi PWA", {
+        body: "Recuerda Alimentarte Sanamente",
+        icon: "logo.png",
+        timeout: 4000,
+        onClick: function () {
+            window.focus();
+            this.close();
+        }
+     });
+  </script>
   
   <meta name="keywords" content="">
   <meta name="description" content="">
@@ -37,6 +49,8 @@
 
 </head>
 <!-- body -->
+
+
 
 <body class="main-layout">
   <!-- loader 
@@ -424,6 +438,7 @@
           <!-- end footer -->
           <!-- Javascript files-->
           <script src="js/main.js"></script>
+          <script src="js/push.min.js"></script>
           <script src="js/jquery.min.js"></script>
           <script src="js/popper.min.js"></script>
           <script src="js/bootstrap.bundle.min.js"></script>
