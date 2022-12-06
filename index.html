@@ -10,7 +10,9 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <!-- site metas -->
   <title>NutriVital</title>
+  <script src="js/push.min.js"></script>
   <link rel="manifest" href="./manifest.json">
+  
   
   <script type="text/javascript">
     if ("serviceWorker" in navigator) {
@@ -21,7 +23,7 @@
   <script>
     Push.create("Bienvenido a mi PWA", {
         body: "Recuerda Alimentarte Sanamente",
-        icon: "piñaa.png",
+        icon: "images/logoNutri.png",
         timeout: 4000,
         onClick: function () {
             window.focus();
@@ -45,7 +47,7 @@
   <link rel="stylesheet" href="css/responsive.css">  
   <!-- Scrollbar Custom CSS -->
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-  <script src="js/push.min.js"></script>
+ 
 
 </head>
 <!-- body -->
@@ -119,7 +121,7 @@
                       <span>¡Nunca es tarde para cambiar tu estilo de vida!</span>
                       <p></p>
                       <a href="#about">Explorar</a> 
-                      <button id="buttooon">¿Enviar Notificaciones?</button>
+                     
                     </div>
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
